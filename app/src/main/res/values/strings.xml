@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Trial App</string>
+    <string name="trends">Trends</string>
+    <string name="style_alert">Style Alert</string>
+    <string name="new_collections">* Collections</string>
+    <string name="your_stuffs">Your Stuffs</string>
+    <string name="two">2</string>
+    <string name="seventeen">17</string>
+    <string name="two_hundred_and_thirty_three">233</string>
+    <string name="eight">8</string>
+    <string name="cat_eyes">CatEyes</string>
+    <string name="by_touchabl">by Touchabl</string>
+    <string name="number_1">#1 World Best Fashion Search Engine</string>
 </resources>
