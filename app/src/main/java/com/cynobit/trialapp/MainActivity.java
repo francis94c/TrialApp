@@ -83,15 +83,22 @@ public class MainActivity extends AppCompatActivity {
                             public void onScanCompleted(String path, Uri uri) {
                             }
                         });
-
-                preview.refreshCamera(camera);
                 Toast.makeText(getApplicationContext(), "Image Captured!", Toast.LENGTH_SHORT).show();
+                Intent pictureIntent = new Intent(getApplicationContext(), PictureActivity.class);
+                pictureIntent.putExtra("image", fileName);
+                startActivity(pictureIntent);
             }
 
         };
         Camera.Parameters parameters = camera.getParameters();
         parameters.setFlashMode(flashModes[flashModeIndex]);
         camera.setParameters(parameters);
+    }
+
+    @Override
+    public void onActivityReenter(int resultCode, Intent data) {
+        preview.refreshCamera(camera);
+        super.onActivityReenter(resultCode, data);
     }
 
     public void shiftFlashMode_Click(View view) {
@@ -118,6 +125,9 @@ public class MainActivity extends AppCompatActivity {
         releaseCamera();
     }
 
+    public void openGallery_Click(View view) {
+        startActivity(new Intent(this, GalleryActivity.class));
+    }
 
     public void takePicture_Click(View view) {
         camera.takePicture(null, null, pictureCallback);

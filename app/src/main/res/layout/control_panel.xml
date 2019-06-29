@@ -8,7 +8,7 @@
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="370dp"
         android:background="@drawable/bottom_flat_bg"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,6 +29,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginRight="5dp"
                 android:text="@string/cat_eyes"
@@ -38,6 +39,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="@string/by_touchabl"
                 android:textColor="@color/dark_gray"
                 android:textSize="18sp" />
@@ -72,6 +74,7 @@
                     android:drawableTop="@android:drawable/btn_star_big_on"
                     android:text="@string/trends"
                     android:textAlignment="center"
+                    android:textColor="@color/dark_gray"
                     android:textSize="@dimen/text_size" />
 
                 <TextView
@@ -96,6 +99,7 @@
                     android:drawableTop="@android:drawable/btn_star_big_on"
                     android:text="@string/style_alert"
                     android:textAlignment="center"
+                    android:textColor="@color/dark_gray"
                     android:textSize="@dimen/text_size" />
 
                 <TextView
@@ -120,6 +124,7 @@
                     android:drawableTop="@android:drawable/btn_star_big_on"
                     android:text="@string/new_collections"
                     android:textAlignment="center"
+                    android:textColor="@color/dark_gray"
                     android:textSize="@dimen/text_size" />
 
                 <TextView
@@ -144,6 +149,7 @@
                     android:drawableTop="@android:drawable/btn_star_big_on"
                     android:text="@string/your_stuffs"
                     android:textAlignment="center"
+                    android:textColor="@color/dark_gray"
                     android:textSize="@dimen/text_size" />
 
                 <TextView
@@ -160,51 +166,52 @@
 
         <LinearLayout
             android:id="@+id/action_panel"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:orientation="horizontal"
-            style="?android:attr/buttonBarButtonStyle"
             android:background="@color/gray"
+            android:orientation="horizontal"
             android:paddingTop="30dp"
             android:paddingBottom="30dp">
 
             <Button
-                style="?android:attr/buttonBarButtonStyle"
                 android:id="@+id/button2"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginEnd="15dp"
-                android:background="@drawable/gray_button"
-                android:textSize="12sp"
-                android:padding="10dp"
-                android:textColor="@color/white"
-                android:drawableLeft="@mipmap/ic_image"
-                android:drawableStart="@mipmap/ic_image"
                 android:layout_marginRight="15dp"
+                android:onClick="openGallery_Click"
                 android:layout_weight="1"
-                android:text="@string/open_gallery" />
+                android:background="@drawable/gray_button"
+                android:drawableStart="@mipmap/ic_image"
+                android:drawableLeft="@mipmap/ic_image"
+                android:padding="10dp"
+                android:text="@string/open_gallery"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
 
             <Button
-                style="?android:attr/buttonBarButtonStyle"
                 android:id="@+id/button"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
-                android:background="@drawable/button_accent"
-                android:padding="10dp"
-                android:textColor="@color/white"
                 android:layout_weight="1"
-                android:onClick="takePicture_Click"
-                android:drawableLeft="@mipmap/ic_camera"
+                android:background="@drawable/button_accent"
                 android:drawableStart="@mipmap/ic_camera"
-                android:text="@string/capture" />
+                android:drawableLeft="@mipmap/ic_camera"
+                android:onClick="takePicture_Click"
+                android:padding="10dp"
+                android:text="@string/capture"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
         </LinearLayout>
 
     </RelativeLayout>
@@ -213,30 +220,30 @@
         android:id="@+id/cameraImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="switchCamera_Click"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="280dp"
         android:layout_marginBottom="8dp"
-        android:src="@mipmap/ic_camera_front"
         android:background="@android:color/transparent"
+        android:onClick="switchCamera_Click"
+        android:src="@mipmap/ic_camera_front"
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/flashModeImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="280dp"
         android:layout_marginEnd="8dp"
-        android:onClick="shiftFlashMode_Click"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@android:color/transparent"
+        android:onClick="shiftFlashMode_Click"
         android:src="@mipmap/ic_flash_off"
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

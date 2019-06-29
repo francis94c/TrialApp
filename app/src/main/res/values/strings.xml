@@ -13,4 +13,27 @@
     <string name="number_1">#1 World Best Fashion Search Engine</string>
     <string name="capture">Take Picture</string>
     <string name="open_gallery">Open Gallery</string>
+    <string name="blue_leather_sneakers">Blue Leather Sneakers</string>
+    <string name="brand">Brand: </string>
+    <string name="material">Material: </string>
+    <string name="authentic">Authentic</string>
+    <string name="yes">Yes</string>
+    <string name="leather">Leather</string>
+    <string name="nike">Nike</string>
+    <string name="next_possible_guess">Next Possible Guess</string>
+    <string name="results">Results</string>
+    <string name="one_o_two">102</string>
+    <string name="style">Style</string>
+    <string name="trending">Trending</string>
+    <string name="tailoring_kit">Tailoring Kit</string>
+    <string name="filter">Filter</string>
+    <string name="lowest_price">Lowest Price</string>
+    <string name="highest_price">Highest Price</string>
+    <string name="best_review">Best Review</string>
+    <string name="konga">Konga</string>
+    <string name="gold_nike_sneakers">Gold Nike Sneakers</string>
+    <string name="if_you_are">If you are offered a seat on a rocket ship, don\'t ask what</string>
+    <string name="twenty_nine_thousand">N29,000</string>
+    <string name="buy">BUY</string>
+    <string name="your_gallery">Your Gallery</string>
 </resources>
